@@ -15,7 +15,7 @@ tellraw @a[tag=doom_logs] {"text": "[raycaster/logic] Setting up the logic..."}
 # Setting up Storage
 #declare storage doom:logic
 $data modify storage doom:logic settings set value {ray_count: $(ray_count)}
-data modify storage doom:logic camera set value {pos: [5.5d, 3.0d], dir: [-1d, 0d], plane: [0d, 0.66d]}
+data modify storage doom:logic camera set value {pos: [5.5d, 3.0d], dir: [0d, -1d], plane: [-0.66d, 0.00d]}
 data modify storage doom:logic consts set value {}
 data modify storage doom:logic loop set value {}
 data modify storage doom:logic render set value {distance: [], side: [], block: []}

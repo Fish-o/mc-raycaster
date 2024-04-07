@@ -13,5 +13,6 @@ execute store result score @e[tag=m_wm2] m_reg run data get storage doom:logic s
 scoreboard players set @e[tag=m_wm] m_reg 500000000
 scoreboard players operation @e[tag=m_wm] m_reg /= @e[tag=m_wm2] m_reg
 execute store result storage doom:logic loop.s float 0.0001 run scoreboard players get @e[tag=m_wm,limit=1] m_reg
+execute store result storage doom:logic slice_size float 0.0001 run scoreboard players get @e[tag=m_wm,limit=1] m_reg
 
 function doom:render/create with storage doom:logic loop
