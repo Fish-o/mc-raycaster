@@ -1,0 +1,1 @@
+data modify storage doom:maps current set from storage doom:maps from_chest

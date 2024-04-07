@@ -1,0 +1,1 @@
+$return run data get storage doom:maps current[$(lookup_z)][$(lookup_x)]
