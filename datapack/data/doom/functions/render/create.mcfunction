@@ -1,6 +1,6 @@
 #> Must be started with doom:logic loop
-$summon block_display -1.0 72.0 3.0 {Tags: ["doom_render", "rd_line_$(x)", "rd_line"], block_state: {Name: "minecraft:white_concrete"}, brightness: {sky: 15, block: 15}}
-$data modify entity @e[tag=rd_line_$(x),limit=1] transformation.scale set value [0.1f, 4f, $(s)f]
+$summon block_display -1.0 72.0 3.0 {Tags: ["doom_render", "rd_line_$(x)", "rd_line"], block_state: {Name: "minecraft:white_concrete"}, brightness: {sky: 0, block: 15}}
+$data modify entity @e[tag=rd_line_$(x),limit=1] transformation.scale set value [0.01f, 4f, $(s)f]
 $execute as @e[tag=rd_line] run execute at @s run tp @s ~ ~ ~-$(s)
 
 $scoreboard players set @e[tag=m_wm] m_reg $(x)
